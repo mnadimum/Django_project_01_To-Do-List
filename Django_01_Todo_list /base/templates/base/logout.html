@@ -1,0 +1,7 @@
+{% comment %}
+<form method="post" action="{% url 'logout' %}">
+  {% csrf_token %}
+  <button type="submit">logout</button>
+</form>
+{% endcomment %} {% block content %} {% block title %}
+<a href="{% url 'logout' %}"></a> Logged out {% endblock %}
